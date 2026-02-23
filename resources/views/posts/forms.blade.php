@@ -6,12 +6,17 @@
     <title>Document</title>
 </head>
 <body>
-    <?php
-    
-    echo "hello world";
     
     
+    <form action="/posts" method="post">
+        @csrf
+        <input name="title" type="text">
+        <input name="content" type="text">
+        <button>Save Data</button>
+    </form>
     
-    ?>
+    
+    
+    
 </body>
 </html>
