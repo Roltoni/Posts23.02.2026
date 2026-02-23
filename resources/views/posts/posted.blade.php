@@ -12,8 +12,11 @@
         {{ $post->title }}
     </h3>
     <p>{{ $post->content }}</p>
+    <a href="/get/posts/{{$post->id}}">Show</a>
 @endforeach
 
 
+<a href="/">Navigation</a>
+<a href="/posts/create">Submit</a>
 </body>
 </html>

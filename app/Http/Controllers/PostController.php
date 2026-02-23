@@ -11,17 +11,15 @@ class PostController extends Controller
     }
     public function store(Request $request){
        Post::create(['title' => $request->input('title'),'content' => $request->input('content')]);
-        return "sucses";
+        return "<a href='/posts'>All</a>";
     }
-    public function show($id)
-    {
+    public function show($id){
         $post = Post::findOrFail($id); 
         return view('posts.show', ['post' => $post]); 
     }
 
-    public function index()
-    {
-        $posts = Post::latest()->get();
-        return view('posts.posted', compact('posts'));
+    public function index(){
+    $posts = Post::all();
+    return view('posts.posted', ['posts' => $posts]);
     }
 }

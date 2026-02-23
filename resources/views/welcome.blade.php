@@ -6,12 +6,8 @@
     <title>Document</title>
 </head>
 <body>
-    <?php
-    
-    echo "hello world";
-    
-    
-    
-    ?>
+    <h1>Navigation</h1>
+<a href="/posts/create">Submit</a>
+<a href="/get/posts">index</a>
 </body>
 </html>

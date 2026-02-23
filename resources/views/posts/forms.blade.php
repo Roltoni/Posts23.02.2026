@@ -14,8 +14,8 @@
         <input name="content" type="text">
         <button>Save Data</button>
     </form>
-    
-    
+    <a href="/">Navigation</a>
+    <a href="/get/posts">index</a>
     
     
 </body>
