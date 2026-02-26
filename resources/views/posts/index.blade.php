@@ -13,10 +13,18 @@
     </h3>
     <p>{{ $post->content }}</p>
     <a href="/get/posts/{{$post->id}}">Show</a>
+    <a href="/get/posts/{{$post->id}}/edit">edit</a>
+    <form action="/get/posts/{{$post->id}}/destroy" method="POST">
+        @csrf
+        @method("DELETE")
+        <input type="submit" value="Delete">
+    </form>
+    
 @endforeach
 
-
+<div>
 <a href="/">Navigation</a>
-<a href="/posts/create">Submit</a>
+</div>
+
 </body>
 </html>
